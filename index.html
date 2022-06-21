@@ -8,16 +8,17 @@
     </script>
 </head>
 <body>
-    <!--
-    Welcome to Tailwind Play, the official Tailwind CSS playground!
-
-    Everything here works just like it does when you're running Tailwind locally
-    with a real build pipeline. You can customize your config file, use features
-    like `@apply`, or even add third-party plugins.
-
-    Feel free to play with this example if you're just learning, or trash it and
-    start from scratch if you know enough to be dangerous. Have fun!
-    -->
+    <script src="https://cdn.jsdelivr.net/gh/xaronnn/js-lanyard/lanyard.js"></script>
+    <script type="text/javascript">
+lanyard({
+    userId: "333201389595525120",
+}).then(console.log) // presenceData
+lanyard({
+    userId: "333201389595525120",
+    socket: true,
+    onPresenceUpdate: console.log // presenceData
+})
+    </script>
     <div class="min-h-screen bg-gray-50 py-6 flex flex-col justify-center relative overflow-hidden sm:py-12">
         <img src="https://play.tailwindcss.com/img/beams.jpg" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-none" width="1308" />
         <div class="absolute inset-0 bg-[url(https://play.tailwindcss.com/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
@@ -31,8 +32,8 @@
                     </div>
                     <div class="pt-8 text-base font-semibold leading-7">
                       <p class="text-gray-900">Are you the owner or collegues?</p>
-                      <p>
                         <a href="https://internal.jvsh.one" class="text-sky-500 hover:text-sky-600">Click here &rarr;</a>
+                        <button class="bg-grey-500 hover:bg-blue-700"><i class+fa-brands fa-discord></i></button>
                       </p>
                     </div>
                   </div>
